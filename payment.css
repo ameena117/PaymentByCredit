@@ -20,14 +20,15 @@
 
 .container {
   width: 100%;
-  padding: 2%;
+  padding: 3%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 .containerPart {
-  width: 42%;
+  width: 360px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -58,7 +59,7 @@
 .orederSummaryView .orderSummary .orderItem {
   padding: 2%;
 }
-.card{
+.card {
   margin-top: 20px;
   display: flex;
   align-self: center;
@@ -71,23 +72,23 @@
   gap: 15px;
   background-color: rgb(237, 101, 124);
 }
-.card .inputs{
+.card .inputs {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.card .inputs input{
+.card .inputs input {
   padding: 2px;
   border-radius: 5px;
   border: none;
   height: 30px;
 }
-.card .cardType{
+.card .cardType {
   display: flex;
   gap: 10px;
 }
-.card .cardType img{
+.card .cardType img {
   width: 40px;
   height: 30px;
 }
