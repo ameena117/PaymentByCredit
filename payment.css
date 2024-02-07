@@ -39,7 +39,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(244, 215, 69, 0.993);
+  background-color: rgb(244, 215, 69);
+  cursor: pointer;
 }
 .mainItem .item {
   display: flex;
