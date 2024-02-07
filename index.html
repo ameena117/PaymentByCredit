@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment By Credit Card</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>
+        Pay by Credit Card <img src="images/cart.png" />
+        <span class="cart"></span>
+      </h1>
+      <hr />
+      <div class="container">
+        <div class="containerPart menu"></div>
+        <hr />
+        <div class="containerPart orederSummaryView">
+          <div class="orderSummary"></div>
+          <div class="totalPrice"></div>
+          <div class="card">
+            <div class="inputs">
+              <input type="text" name="cardNum" placeholder="Card Number"/>
+              <input type="text" name="cardName" placeholder="Card Holder Name"/>
+            </div>
+            <div class="cardType">
+              <img src="images/visa.png">
+              <img src="images/mastercard.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="orders.js"></script>
+  </body>
+</html>
