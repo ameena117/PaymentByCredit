@@ -93,7 +93,7 @@
   width: 40px;
   height: 30px;
 }
-button{
+.payBtn{
   width: 70px;
   padding: 5px;
   border-radius: 5px;
@@ -105,4 +105,11 @@ button{
   text-align: center;
   justify-content: center;
   align-self: center;
+}
+.orderItem button {
+  width: 20px;
+  padding: 3px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(181, 122, 122);
 }
