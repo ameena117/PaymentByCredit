@@ -17,6 +17,14 @@
   width: 25px;
   position: relative;
 }
+.mainContainer h1 .cart{
+  font-size: 25px;
+  position: absolute;
+  border-radius: 50%;
+  background: red;
+  top: 8px;
+  right: 164px;
+}
 
 .container {
   width: 100%;

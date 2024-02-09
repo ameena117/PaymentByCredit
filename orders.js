@@ -12,7 +12,7 @@ let total = document.querySelector(".orederSummaryView .totalPrice");
 let orderItems = [];
 let itemSelected = [];
 let totalPrice = 0;
-let count =0;
+let count = 0;
 menu.innerHTML = items
   .map(
     ({ item, price, img }) => `
@@ -32,6 +32,7 @@ let subBtn = [];
 for (let i = 0; i < item.length; i++) {
   item[i].addEventListener("click", function (e) {
     itemSelected.push(i);
+    console.log(itemSelected);
     console.log(items[i].item);
     console.log(items[i].price);
     count = itemSelected.filter(function (value) {
@@ -61,6 +62,9 @@ for (let i = 0; i < item.length; i++) {
     totalPrice = orderItems.reduce((a, b) => a + b.total, 0);
     console.log(totalPrice);
     total.innerHTML = `<hr/>  Total Price = $${totalPrice}`;
+    let totalCount = orderItems.reduce((a, b) => a + b.count, 0);
+    console.log(totalCount);
+    document.querySelector(".cart").innerHTML = totalCount;
     addBtn = document.querySelectorAll(".orderItem .addBtn");
     subBtn = document.querySelectorAll(".orderItem .subBtn");
     for (let i = 0; i < addBtn.length; i++) {
@@ -102,7 +106,9 @@ for (let i = 0; i < item.length; i++) {
             )
             .join("");
           totalPrice = orderItems.reduce((a, b) => a + b.total, 0);
-          
+          console.log(itemSelected);
+          itemSelected.splice(i, 1);
+          console.log(itemSelected);
           console.log(totalPrice);
           totalPrice == 0
             ? (total.innerHTML = "")
