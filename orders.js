@@ -13,8 +13,8 @@ const items = [
 ];
 
 const menu = document.querySelector(".menu");
-let order = document.querySelector(".orederSummaryView .orderSummary");
-let total = document.querySelector(".orederSummaryView .totalPrice");
+let order = document.querySelector(".orderSummary");
+let total = document.querySelector(".totalPrice");
 let totalPrice = 0;
 menu.innerHTML = items
   .map(
@@ -25,7 +25,7 @@ menu.innerHTML = items
 let item = document.querySelectorAll(".mainItem");
 let addBtn = [];
 let subBtn = [];
-const cart = document.querySelector(".cart");
+const cart = document.querySelector(".itemsCount");
 let orderItems = [];
 
 function updateOrder(i, j) {
@@ -43,7 +43,7 @@ function updateOrder(i, j) {
     orderItem.remove();
   }
   totalPrice = orderItems.reduce((a, b) => a + b.total, 0);
-  total.innerHTML = `<hr/>  Total Price = $${totalPrice}`;
+  total.innerHTML = `Total Price = $${totalPrice}`;
   let totalCount = orderItems.reduce((a, b) => a + b.count, 0);
   cart.innerHTML = totalCount;
 }
@@ -55,7 +55,7 @@ function insertOrder() {
     )
     .join("");
   totalPrice = orderItems.reduce((a, b) => a + b.total, 0);
-  total.innerHTML = `<hr/>  Total Price = $${totalPrice}`;
+  total.innerHTML = `Total Price = $${totalPrice}`;
   let totalCount = orderItems.reduce((a, b) => a + b.count, 0);
   cart.innerHTML = totalCount;
 }

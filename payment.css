@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  color: white;
 }
 .mainContainer {
   width: 100%;
@@ -10,7 +9,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(54, 100, 252, 0.998);
+  background-color: rgba(54, 100, 252, 0.998);  
+  color: white;
 }
 .mainContainer h1 img {
   height: 25px;
@@ -60,12 +60,11 @@
   width: 30px;
   height: 30px;
 }
-.orederSummaryView .totalPrice,
-.orederSummaryView .orderSummary {
+.totalPrice,
+.orderSummary {
   border-radius: 10px;
-  background-color: rgba(128, 128, 128, 0.187);
-}
-.orederSummaryView .orderSummary .orderItem {
+  background-color: white;
+  color: black;  
   padding: 2%;
 }
 .card {
@@ -81,13 +80,13 @@
   gap: 15px;
   background-color: rgb(237, 101, 124);
 }
-.card .inputs {
+.card .inputsCard {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.card .inputs input {
+.card .inputsCard input {
   padding: 2px;
   border-radius: 5px;
   border: none;
